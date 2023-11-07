@@ -81,10 +81,6 @@ export default hopeTheme({
       ],
     },
     comment: {
-      /*Twikoo驱动的评论
-        provider: "Twikoo",
-        envId: "https://pl.cooing.org.cn",
-      */
       provider: "Waline",
       serverURL: "https://waline.mwdocs.info",
 	  comment: false,
