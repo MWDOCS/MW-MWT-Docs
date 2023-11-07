@@ -4,7 +4,6 @@ import theme from "./theme.js";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { getDirname, path } from "@vuepress/utils";
 import { removePWAPlugin } from "vuepress-plugin-remove-pwa";
-import { lightgalleryPlugin } from "vuepress-plugin-lightgallery";
 
 export default defineUserConfig({
 	lang: 'zh-CN',
@@ -15,10 +14,6 @@ export default defineUserConfig({
 	shouldPrefetch: false,
 	theme,
 	plugins: [
-	lightgalleryPlugin({
-      plugins: ["pager", "share", "zoom", "thumbnail"],
-	  delay: 200,
-    }),
 	removePWAPlugin({
     }),
 		/*fullTextSearchPlugin({
